@@ -1,8 +1,8 @@
-function preload() {
-  superNormale_rg = loadFont("/assets/fonts/SupernormaleEigStaCon W00 Rg.ttf");
-  superNormale_bd = loadFont("/assets/fonts/SupernormaleEigSta W00 Bold.ttf");
-  VCR_OSD = loadFont("/assets/fonts/VCR_OSD.ttf");
-}
+// function preload() {
+//   superNormale_rg = loadFont("/assets/fonts/SupernormaleEigStaCon W00 Rg.ttf");
+//   superNormale_bd = loadFont("/assets/fonts/SupernormaleEigSta W00 Bold.ttf");
+//   VCR_OSD = loadFont("/assets/fonts/VCR_OSD.ttf");
+// }
 
 let paper = [];
 let debugMode = false;
