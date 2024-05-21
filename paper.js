@@ -114,10 +114,10 @@ class Paper {
       this.checkArr[2],
       this.checkArr[3]
     );
-    for (let i = 0; i < this.checkArr.length; i++) {
-      text(this.checkArr[i], 100, 100 + 20 * i);
-    }
-    text(this.state, 100, 200);
+    // for (let i = 0; i < this.checkArr.length; i++) {
+    // text(this.checkArr[i], 100, 100 + 20 * i);
+    // }
+    // text(this.state, 100, 200);
 
     let pt_l = ray.cast(this.walls[this.leftWall]);
     let pt_r = ray.cast(this.walls[this.rightWall]);

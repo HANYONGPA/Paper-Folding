@@ -1,6 +1,7 @@
 function preload() {
   superNormale_rg = loadFont("/assets/fonts/SupernormaleEigStaCon W00 Rg.ttf");
   superNormale_bd = loadFont("/assets/fonts/SupernormaleEigSta W00 Bold.ttf");
+  VCR_OSD = loadFont("/assets/fonts/VCR_OSD.ttf");
 }
 
 let paper = [];
@@ -30,6 +31,22 @@ function draw() {
     paper[i].update();
     paper[i].display();
   }
+
+  push();
+  textFont(VCR_OSD);
+  textSize(22);
+  text("Press 'd' to toggle debug mode", width / 2, height - 30);
+  text(
+    "Press '0' to move control points to original position",
+    width / 2,
+    height - 70
+  );
+  text(
+    "Press '1' to move control points to random position",
+    width / 2,
+    height - 95
+  );
+  pop();
 }
 
 function keyPressed() {
